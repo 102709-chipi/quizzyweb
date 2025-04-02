@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Interface</title>
+</head>
+<link rel="stylesheet" href="./quiz10.css">
+
+<body>
+    <div class="quiz-container">
+        <div class="header">
+            <img src="../images/duo.png" alt="DUO Logo" class="duo-logo">
+        </div>
+        <div class="navigation">
+            <a href="../quiz1/quiz1.html">1</a>
+            <a href="../quiz2/quiz2.html">2</a>
+            <a href="../quiz3/quiz3.html">3</a>
+            <a href="../quiz4/quiz4.html">4</a>
+            <a href="../quiz5/quiz5.html">5</a>
+            <a href="../quiz6/quiz6.html">6</a>
+            <a href="../quiz7/quiz7.html">7</a>
+            <a href="../quiz8/quiz8.html">8</a>
+            <a href="../quiz9/quiz9.html">9</a>
+            <a href="./quiz10.html"class="active">10</a>
+            <a href="../result/result.html">✓</a> 
+        </div>
+        <div class="question-box" id="vraag1">
+            <img src="../images/studie1.png" alt="Geld afbeelding">
+            <p style="font-size: 18px; font-weight: bold;">Wat valt er onder studiefinanciering</p>
+        </div>
+        <div class="options">
+            <button onclick="checkAnswer(this)">A alleen lening </button>
+            <button onclick="checkAnswer(this)">B lening + ov-kaart</button>
+            <button onclick="checkAnswer(this)">C lening + aanvullende beurs</button>
+            <button onclick="checkAnswer(this)">D Lening, aanvullende beurs en ov-kaart</button>
+        </div>
+    <div class="quiz-container">
+        <a href="../result/result.html" class="next-btn">Volgende vraag</a>
+    </div></div>
+    <script src="./quiz10.js"></script>
+</body>
+</html>

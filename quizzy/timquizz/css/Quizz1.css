@@ -1,0 +1,106 @@
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #e4e4e4;
+        }
+        .quiz-container {
+            background: rgb(255, 255, 255);
+            padding: 30px;
+            width: 1400px;
+            height:    600px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .progress-bar {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 15px;
+        }
+        .progress-bar div {
+            width: 40px;
+            height: 40px;
+            background: #ccc;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 5px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        .progress-bar .active {
+            background: #0056b3;
+            color: white;
+        }
+        .question-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .question-image {
+            width: 200px;
+            height: 230px;
+           
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+        .question-text {
+            margin-bottom: 15px;
+            font-size: 22px;
+        }
+        .options {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+        }
+        .option {
+            padding: 15px;
+            background: #0056b3;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s;
+            font-size: 18px;
+        }
+        .option:hover {
+            background: #003f7f;
+        }
+        .next-button {
+            margin-top: 20px;
+            padding: 12px;
+            background: #ddd;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+            .logo_duo {
+                position: absolute;
+                top: 20px;
+                left: 20px;
+                width: 100px; 
+                height: auto;
+            }
+
+            .back-to-menu-button {
+                position: absolute;
+                top: 20px;
+                right: 20px;
+                padding: 12px;
+                background: #08c001;
+                border: none;
+                cursor: pointer;
+                border-radius: 5px;
+                font-size: 16px;
+            }
+       

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nav</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="option left" onclick="selectWeb('../quiz1/quiz1.html')">
+            <div class="overlay">quizz1</div>
+        </div>
+        <div class="option right" onclick="selectWeb('./TMQuiz1.html')">
+            <div class="overlay">quiz2</div>
+        </div>
+    </div>
+
+    
+    <a href="../infopage/info.html" class="infoknop">Informatie</a>
+
+    <script>
+        function selectWeb(website) {
+            window.location.href = website;
+        }
+
+
+        
+    </script>
+</body>
+</html>

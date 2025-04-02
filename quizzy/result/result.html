@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resultaten</title>
+    <link rel="stylesheet" href="./result.css">
+
+    </style>
+</head>
+<body>
+    <a href="../timquizz/main.html" class="home-btn">🏠 Home</a>
+
+    <div class="results-container">
+        <h1>🎉 Je resultaten</h1>
+        <p id="scoreDisplay">Laden...</p>
+        <a href="#" class="retry-btn" onclick="resetQuiz()">Reset quiz</a>
+    </div>
+
+    <script>
+        const eindScore = localStorage.getItem('finalScore') || 0;
+        document.getElementById('scoreDisplay').textContent = `Je score is: ${eindScore}/10`;
+
+        function resetQuiz() {
+            for (let i = 1; i <= 10; i++) {
+                localStorage.removeItem(`quiz${i}`);
+            }
+            localStorage.removeItem('finalScore');
+            window.location.href = "../quiz1/quiz1.html";
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.results-container {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    text-align: center;
+    width: 90%;
+    max-width: 500px;
+}
+
+.results-container h1 {
+    color: #0044cc;
+    margin-bottom: 20px;
+}
+
+#scoreDisplay {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.retry-btn {
+    background: #e53935;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background 0.3s, transform 0.2s;
+    display: inline-block;
+}
+
+.retry-btn:hover {
+    background: #c62828;
+    transform: scale(1.05);
+}
+
+
+@keyframes bluePulse {
+    0% {
+        background-color: #66b2ff; 
+    }
+    50% {
+        background-color: #0044cc; 
+    }
+    100% {
+        background-color: #66b2ff;
+    }
+}
+
+.home-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: #66b2ff;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: transform 0.2s;
+    animation: bluePulse 3s infinite ease-in-out;
+    z-index: 1000;
+}
+
+.home-btn:hover {
+    transform: scale(1.05);
+}
